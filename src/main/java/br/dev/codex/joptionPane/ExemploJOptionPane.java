@@ -1,4 +1,4 @@
-package br.dev.codex.JOptionPane;
+package br.dev.codex.joptionPane;
 
 import javax.swing.*;
 

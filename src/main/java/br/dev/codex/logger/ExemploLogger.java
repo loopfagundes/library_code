@@ -4,6 +4,12 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 public class ExemploLogger {
+    /*
+      Utilizando um Logger: Para uma abordagem mais robusta e configurável, especialmente útil em aplicações maiores.
+
+      Como substituição para Sysout, porem quando a enviar o git e não vai aparecer a logger como sumir!
+     */
+
 //    private static final Logger logger = Logger.getLogger(ExemploLogger.class.getName());
 //
 //    public static void main(String[] args) {
