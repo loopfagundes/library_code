@@ -1,7 +1,5 @@
 ﻿# :books: ![](src/img/font.png) :books:
 
----
-
 #### "Library Code," em português é "Código da Biblioteca."
 > **Biblioteca de Código (Programming Library):** 
 >
