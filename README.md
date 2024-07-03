@@ -19,7 +19,3 @@
 >classes, or routines that can be used by different programs to perform specific tasks. 
 >For example, a data manipulation library may contain functions for reading, 
 >writing, and processing data in various formats._
-
----
-
-[VER ELEMENT](src/main/java/br/dev/codex/cucumber/Element.java)
