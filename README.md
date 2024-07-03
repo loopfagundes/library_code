@@ -1,6 +1,6 @@
 ﻿![](src/img/font.png)
 
-#### "Library Code," em português é "Código da Biblioteca."
+#### Em português: 
 > **Biblioteca de Código (Programming Library):** 
 >
 >_Em programação, uma biblioteca de código é um conjunto de funções, 
