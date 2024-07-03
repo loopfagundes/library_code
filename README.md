@@ -1,4 +1,4 @@
-﻿# :books: ![](src/img/font.png) :books:
+﻿![](src/img/font.png)
 
 #### "Library Code," em português é "Código da Biblioteca."
 > **Biblioteca de Código (Programming Library):** 
