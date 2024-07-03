@@ -1,6 +1,6 @@
 ﻿# :books: Library Code :books:
 
-![](src/img/code.png) ![](src/img/font.png) ![](src/img/code.png)
+![](src/img/font.png)
 
 ---
 
