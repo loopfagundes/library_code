@@ -1,7 +1,7 @@
 ﻿![](src/img/font.png)
 
 #### Em português: 
-> **Biblioteca de Código (Programming Library):** 
+> _**Biblioteca de Código**_ 
 >
 >_Em programação, uma biblioteca de código é um conjunto de funções, 
 > classes ou rotinas que podem ser usadas por diferentes programas para realizar tarefas específicas. 
