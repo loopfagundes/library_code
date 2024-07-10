@@ -24,10 +24,4 @@ public class PrintStreamExtent extends PrintStream {
         }
         super.println(linha);
     }
-
-//    <dependency>
-//      <groupId>com.aventstack</groupId>
-//      <artifactId>extentreports-testng-adapter</artifactId>
-//      <version>1.0.3</version>
-//    </dependency>
 }

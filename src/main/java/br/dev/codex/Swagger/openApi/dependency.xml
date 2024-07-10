@@ -1,0 +1,8 @@
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.6.0</version>
+</dependency>
+
+<!--É padrão swagger sem configuração da class, exemplo SwaggerConfig.class-->
+<!--Quando execução e é só abrir o navegador: http://localhost:8080/swagger-ui.html-->
