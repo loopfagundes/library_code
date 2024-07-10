@@ -1,4 +1,4 @@
-package br.dev.codex.Helpers;
+package br.dev.codex.helpers;
 
 public class Helpers {
     public Helpers() {

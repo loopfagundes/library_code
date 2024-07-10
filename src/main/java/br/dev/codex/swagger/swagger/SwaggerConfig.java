@@ -1,4 +1,4 @@
-package br.dev.codex.Swagger.swagger;
+package br.dev.codex.swagger.swagger;
 
 import io.swagger.v3.oas.models.ExternalDocumentation;
 import io.swagger.v3.oas.models.OpenAPI;
