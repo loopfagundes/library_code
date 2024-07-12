@@ -4,9 +4,9 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 import java.util.Base64;
 
-public class CryptoUtils {
+public class Crypto {
     private static final String ALGORITHM = "AES";
-    private static final byte[] KEY = "MySuperSecretKey".getBytes(); // Use a key management system for production
+    private static final byte[] KEY = "MySuperSecretKey".getBytes(); // Use um sistema de gerenciamento de chaves para produção.
 
     public static String encrypt(String data) throws Exception {
         SecretKeySpec keySpec = new SecretKeySpec(KEY, ALGORITHM);

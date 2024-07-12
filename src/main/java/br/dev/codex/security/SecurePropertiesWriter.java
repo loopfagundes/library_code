@@ -11,8 +11,8 @@ public class SecurePropertiesWriter {
             String password = "securePassword";
 
             // Criptografar o e-mail e a senha
-            String encryptedEmail = CryptoUtils.encrypt(email);
-            String encryptedPassword = CryptoUtils.encrypt(password);
+            String encryptedEmail = Crypto.encrypt(email);
+            String encryptedPassword = Crypto.encrypt(password);
 
             // Armazenar dados criptografados
             properties.setProperty("email", encryptedEmail);
@@ -25,7 +25,7 @@ public class SecurePropertiesWriter {
 
             System.out.println("Dados criptografados e armazenados com sucesso.");
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 }
