@@ -1,4 +1,4 @@
-package br.dev.codex.security;
+package br.dev.codex.security.withProp;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
@@ -6,7 +6,7 @@ import java.util.Base64;
 
 public class Crypto {
     private static final String ALGORITHM = "AES";
-    private static final byte[] KEY = "MySuperSecretKey".getBytes(); // Use um sistema de gerenciamento de chaves para produção.
+    private static final byte[] KEY = "MySuperSecretKey".getBytes();
 
     public static String encrypt(String data) throws Exception {
         SecretKeySpec keySpec = new SecretKeySpec(KEY, ALGORITHM);

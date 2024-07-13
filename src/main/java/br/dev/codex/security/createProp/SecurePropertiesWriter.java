@@ -1,4 +1,4 @@
-package br.dev.codex.security;
+package br.dev.codex.security.createProp;
 
 import java.io.FileOutputStream;
 import java.util.Properties;
