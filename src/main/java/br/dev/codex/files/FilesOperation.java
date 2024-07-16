@@ -3,8 +3,10 @@ package app.netlify.bugbank.utils;
 import br.dev.codex.logger.LoggerFactory;
 
 import java.io.*;
+import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 public class FilesOperation {
@@ -80,6 +82,29 @@ public class FilesOperation {
             }
         } else {
             System.out.println("O arquivo '" + name + "' não existe.");
+        }
+    }
+
+    // Apagar todas properties
+    //é opcional
+    private static void deleteAllProperties(String nameFolder) {
+        // caminho da pasta onde os arquivos .properties estão dentro pasta
+        Path directoryPath = Paths.get("src/test/resources/" + nameFolder);
+        try {
+            // verificar se a pasta existe e dentro pasta
+            if (Files.exists(directoryPath) && Files.isDirectory(directoryPath)) {
+                // Apagar todos os arquivos que tem dentro .properties
+                try (DirectoryStream<Path> stream = Files.newDirectoryStream(directoryPath, "*.properties")) {
+                    for (Path entry : stream) {
+                        Files.delete(entry);
+                        System.out.println("Arquivo '" + entry.getFileName() + "' apagado com sucesso!");
+                    }
+                }
+            } else {
+                System.out.println("A pasta '" + directoryPath + "' não existe ou não é um diretório.");
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }
