@@ -1,4 +1,4 @@
-package app.netlify.bugbank.utils;
+package br.dev.codex.files;
 
 import br.dev.codex.logger.LoggerFactory;
 
@@ -70,7 +70,7 @@ public class FilesOperation {
         }
     }
 
-    //delete uma prop
+    //delete uma properties
     //é opcional
     public static void deleteProperties(String folderName, String name) {
         File file = new File(DIR_PATH_PROPERTIES + folderName + "/" + name + ".properties");
@@ -87,7 +87,7 @@ public class FilesOperation {
 
     // Apagar todas properties
     //é opcional
-    private static void deleteAllProperties(String nameFolder) {
+    public static void deleteAllProperties(String nameFolder) {
         // caminho da pasta onde os arquivos .properties estão dentro pasta
         Path directoryPath = Paths.get("src/test/resources/" + nameFolder);
         try {
