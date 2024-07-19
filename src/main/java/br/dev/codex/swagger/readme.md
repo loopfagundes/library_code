@@ -7,5 +7,5 @@
 
 #### Branch: OpenApi or Swagger:
 
-* OpenApi - Sem configuração de Swagger. e só utilizada dependencia [OpenApi](https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui)
-* Swagger - Com configuração já está no dentro da classe. 
+* **OpenApi** - Sem configuração de Swagger. e só utilizada dependencia [OpenApi](https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui)
+* **Swagger** - Com configuração já está no dentro da classe. 
