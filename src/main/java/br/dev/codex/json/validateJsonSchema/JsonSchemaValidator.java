@@ -28,8 +28,8 @@ public class JsonSchemaValidator {
 
     public static void validateJsonSchema() {
         try {
-            String jsonFile = "src/test/resources/JSON/fileJson.json";
-            String schemaFile = "src/test/resources/schemas/fileSchema.json";
+            String jsonFile = "src/test/resources/JSON/fileJson.json"; // <-- o caminho da pasta dentro no arquivo de JSON
+            String schemaFile = "src/test/resources/schemas/fileSchema.json"; // <-- o caminho da pasta dentro no arquivo de SCHEMA JSON
 
             String jsonData = readJsonFile(jsonFile);
             String schemaData = readJsonFile(schemaFile);
