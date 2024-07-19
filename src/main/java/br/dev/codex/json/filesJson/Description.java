@@ -1,4 +1,4 @@
-package br.dev.codex.filesJson;
+package br.dev.codex.json.filesJson;
 
 import lombok.Getter;
 import lombok.Setter;

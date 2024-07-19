@@ -1,4 +1,4 @@
-package br.dev.codex.jsonDataProvider;
+package br.dev.codex.json.jsonDataProvider;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Getter;

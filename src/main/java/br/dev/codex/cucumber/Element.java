@@ -1,6 +1,10 @@
 package br.dev.codex.cucumber;
 
+import br.dev.codex.files.FilesOperation;
+
 import java.io.IOException;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeoutException;
 
 public class Element {
 

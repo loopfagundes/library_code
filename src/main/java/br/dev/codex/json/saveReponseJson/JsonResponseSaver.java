@@ -1,4 +1,4 @@
-package br.dev.codex.saveReponseJson;
+package br.dev.codex.json.saveReponseJson;
 
 import java.io.IOException;
 import java.net.URI;

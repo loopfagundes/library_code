@@ -9,7 +9,7 @@ public class ExemploLogger {
       Utilizando um Logger: Para uma abordagem mais robusta e configurável, especialmente útil em aplicações maiores.
       Como substituição para Sysout, porem quando a enviar o git e não vai aparecer a logger como sumir!
 
-      -> ATENCAO, PRECISAR CRIAR UMA CLASSE PROPRIA LOGGER E EXPORTAR OUTRA CLASSE E FUNCIONADO E NAO VAI SUMIR.
+      -> ATENCAO, PRECISA DE CRIAR UMA CLASSE PROPRIA LOGGER E EXPORTAR OUTRA CLASSE E FUNCIONADO E NAO VAI SUMIR.
 
      */
 

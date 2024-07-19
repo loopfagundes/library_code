@@ -1,4 +1,4 @@
-package br.dev.codex.dataJson;
+package br.dev.codex.json.dataJson;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package br.dev.codex.json;
+package br.dev.codex.json.expectedJson;
 
 import org.apache.commons.io.FileUtils;
 
