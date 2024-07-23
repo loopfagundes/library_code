@@ -1,4 +1,4 @@
-package br.dev.codex.dataProvider;
+package br.dev.codex.dataProvider.standard;
 
 import org.testng.annotations.DataProvider;
 
