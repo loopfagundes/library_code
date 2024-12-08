@@ -69,4 +69,15 @@ public class JsExecutor {
         String LoadTime = String.valueOf(loadEventEnd - navigationStart);
         Assert.assertEquals(LoadTime, "3000");
     }
+
+    // outro melhorar versao
+    public static void loadTimePage(WebDriver driver) {
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        Long loadEventEnd = (Long) jse.executeScript("return window.performance.timing.loadEventEnd;");
+        Long navigationStart = (Long) jse.executeScript("return window.performance.timing.navigationStart;");
+        long loadTime = loadEventEnd - navigationStart;
+        Report.logCapture(Status.INFO, "Tempo de carregamento da página: " + loadTime + "ms");
+        long timeLimit = 3000;
+        Assert.assertTrue(loadTime <= timeLimit, "O tempo de carregamento excedeu o limite esperado. Tempo: " + loadTime + "ms");
+    }
 }
