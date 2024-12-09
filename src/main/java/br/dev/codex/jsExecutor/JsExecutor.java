@@ -80,4 +80,21 @@ public class JsExecutor {
         long timeLimit = 3000;
         Assert.assertTrue(loadTime <= timeLimit, "O tempo de carregamento excedeu o limite esperado. Tempo: " + loadTime + "ms");
     }
+
+    // outro melhorar versao
+    public static void pageLoadTime(WebDriver driver, long timeLimitMs) {
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        Long loadEventEnd = (Long) jse.executeScript("return window.performance.timing.loadEventEnd;");
+        Long navigationStart = (Long) jse.executeScript("return window.performance.timing.navigationStart;");
+        if (loadEventEnd == 0) {
+            Report.logCapture(Status.FAIL, "A página ainda não terminou de carregar ou 'loadEventEnd' não está acessível.");
+            Assert.fail("Erro ao capturar o tempo de carregamento da página. 'loadEventEnd' é zero.");
+            return;
+        }
+        long loadTime = loadEventEnd - navigationStart;
+        Report.logCapture(Status.INFO, "Tempo de carregamento da página: " + loadTime + "ms");
+        Assert.assertTrue(loadTime <= timeLimitMs,
+                "O tempo de carregamento da página excedeu o limite esperado. Tempo: " + loadTime + "ms, Limite: " + timeLimitMs + "ms"
+        );
+    }
 }
