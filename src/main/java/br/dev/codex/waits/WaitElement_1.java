@@ -8,10 +8,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class WaitElement {
+public class WaitElement_1 {
     private final WebDriver driver;
 
-    public WaitElement(WebDriver _driver) {
+    public WaitElement_1(WebDriver _driver) {
         driver = _driver;
     }
 
